@@ -35,7 +35,7 @@ jobs:
         run: |
           flake8 --ignore=E501,F401 .
       
-      - name: Docker Credentials
+      - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKER_USERNAME2 }}
